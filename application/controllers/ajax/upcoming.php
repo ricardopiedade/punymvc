@@ -14,7 +14,7 @@ class movies extends \punymvc\Controller{
 			'offset' => $offset,
 			'count'  => $count,
 			'data'   => $this->response->view('index')
-		)
+		);
 		
         $this->response->setBody(json_encode($list));
     }

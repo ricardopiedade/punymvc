@@ -13,7 +13,7 @@ $app->get('/',              'main@index')
     ->get('/movie/{$slug}', 'main@movie')
     ->any('/ajax/movies/upcoming/{offset}',   'main@movies')
     ->get('/poster','proxy@poster');
-	
+    
 $app->database(array(
     'hostname' => 'your_database_host',
     'username' => 'your_user',
