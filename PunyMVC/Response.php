@@ -11,20 +11,20 @@ class Response {
     protected $view = null;
     
     protected $sent = false;
-	
-	protected $outputMode = 0;
     
-	public function __construct() {
-	    $this->view = new View();
-	}
+    protected $outputMode = 0;
+    
+    public function __construct() {
+        $this->view = new View();
+    }
 
     public function view($templatePath, array $templateData = array(), $returnContent = false) {
-    	$parsedView = $this->view->display($templatePath, $templateData);
-		
-    	if ($returnContent) {
-    		return $parsedView;
-    	}
-		
+        $parsedView = $this->view->display($templatePath, $templateData);
+        
+        if ($returnContent) {
+            return $parsedView;
+        }
+        
         $this->appendBody($parsedView);
     }
 
@@ -43,24 +43,24 @@ class Response {
     public function appendBody($output) {
         $this->body .= $output;
     }
-	
-	public function setStatus($statusCode = 200) {
-		$this->status = $statusCode;
-	}
-	
-	public function clearBody() {
-		$this->body = '';
-	}
-	
-	public function clearHeaders() {
-		$this->headers = array();
-	}
-	
+    
+    public function setStatus($statusCode = 200) {
+        $this->status = $statusCode;
+    }
+    
+    public function clearBody() {
+        $this->body = '';
+    }
+    
+    public function clearHeaders() {
+        $this->headers = array();
+    }
+    
     public function send() {
         $this->sent = true;
         
-		http_response_code($this->status);
-		
+        http_response_code($this->status);
+        
         // send response headers
         foreach ($this->headers as $headerName => $headerValue) {
             header($headerName . ': ' . $headerValue);    

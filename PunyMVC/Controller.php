@@ -9,7 +9,7 @@ abstract class Controller extends Loader{
     
     public function __construct(Request $request, Response $response) {
         $this->request  = $request;
-		$this->response = $response;
+        $this->response = $response;
     }
     
 
