@@ -2,7 +2,7 @@
 
 /*
  * This is the PunyMVC framework main class
- * When its run() method is called, the request is parsed, routed, and the mathing controller is executed
+ * When its run() method is called, the request is parsed, routed, and the matching controller is executed
  * 
  * Provides method to set configuration values, set routes and configure database access  
  * 
