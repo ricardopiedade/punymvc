@@ -3,7 +3,7 @@
 /*
  * 
  * The Loader class is a base class for Model, Controller and Libray classes
- * It provides an easy way to load Models and Libraries, as well as confguration items from Controllers, Models and Libraries
+ * It provides an easy way to load Models and Libraries, as well as configuration items from Controllers, Models and Libraries
  * Returns singleton instances  
  * 
  */
