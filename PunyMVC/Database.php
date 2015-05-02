@@ -2,9 +2,9 @@
 
 /*
  * 
- * The database class is meant to provider database access functionality
- * It currently only siuports MySQL, and does nothing mora than to provide access do Singleton PDO instances
- * It suports multiple connections by making use of an optional $instance param
+ * The database class is meant to provide database access functionality
+ * It currently only supports MySQL, and does nothing more than to provide access to Singleton PDO instances
+ * It supports multiple connections by making use of an optional $instance param
  * The Model class exposes access to this class inside user-created models
  * 
  */ 
