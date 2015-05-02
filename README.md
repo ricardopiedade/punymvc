@@ -67,6 +67,7 @@ When the _PunyMVC->run()_ method is called, the following workflow is executed:
 2. The _Router_ inspects the _Request_ to find a matching route, and returns an generic object back to the _PunyMVC_ object, containing the path, class and method of the appropriate _Controller_.
 3. The _PunyMVC_ class instances the controller and calls its method, passing along the _Request_ object and a new _Response_ Object.
 4. From here on is it up to the developer's code... The controller's parent _Controller_ base class extends the _Loader_ class, providing him with easy means to access models, libraries, and configuration items. As the _Request_ and _Response_ objects are required parameters of the _Controller_ base class, the developer can also get _Request_ information, and use the _Response_ object to manipulate output such as sending response headers, setting raw output or executing views.
-5. That's it!
+5. When the controller code is finished, either the developer can call the _Response->send()_ method, or it will be called automatically via the _Response_ object destructor. The _Response_ object will build the response by setting the HTTP status code, outputting the response headers and finally the response body.
+6. That's it!
 
 
