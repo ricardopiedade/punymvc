@@ -1,0 +1,22 @@
+div.movie_list_info {
+    padding-left: 20px
+}
+
+div.movie_list_item {
+    margin-bottom: 10px;
+    background-color: #eeeeca;
+}
+
+div.container {
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    background-color: #dddddd;
+}
+
+div.plot {
+    margin-top: 10px;
+}
+
+div.month_list {
+    margin-bottom: 20px;
+}
