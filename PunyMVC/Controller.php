@@ -6,7 +6,7 @@
  * 
  * The PunyMVC main class will call the appropriate controller after matching a request uri with a user-defined route
  * 
- * The Controller class receives a Request and a Response objects on instanciation
+ * The Controller class receives a Request and a Response objects on instantiation
  * 
  * Controller class extends Loader, which provides functionality to load models and libraries inside the controller 
  * 
