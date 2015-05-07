@@ -57,7 +57,7 @@ The _Loader_ class is a parent class for _Controller_, _Model_ and _Library_ cla
 * **View**
 The _View_ class takes an template file and an array of data and parses the template using the data array as variables. The _View_ instance belongs to the Response object.
 * **Config**
-The _Config_ class provides a way to set or get configuration key->value pairs thourhgout the application.
+The _Config_ class provides a way to set or get configuration key->value pairs throughout the application.
 
 ## Application Flow
 
