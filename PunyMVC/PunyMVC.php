@@ -54,7 +54,7 @@ class PunyMVC {
      * sets a route for the POST request method
      */     
     public function post($route, $action) {
-        $this->router->addRoute('PUT', $route, $action);
+        $this->router->addRoute('POST', $route, $action);
         return $this;
     }
     
